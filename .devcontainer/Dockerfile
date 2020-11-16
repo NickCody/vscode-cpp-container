@@ -21,3 +21,4 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 
 RUN groupadd docker \
     && usermod -aG docker vscode
+

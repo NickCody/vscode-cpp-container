@@ -22,6 +22,7 @@
 
 	"mounts": [
 		"source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
+		// "source=${env:HOME}${env:USERPROFILE},target=/workspace/user,type=bind,consistency=cached",
 	],
 	
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
