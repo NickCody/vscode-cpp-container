@@ -331,3 +331,9 @@ ASALocalRun/
 
 # Build output for this sample
 *.out
+
+# Bazel
+bazel-bin
+bazel-nick
+bazel-out
+bazel-testlogs
