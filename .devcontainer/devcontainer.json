@@ -34,5 +34,5 @@
 	// "postCreateCommand": "gcc -v",
 
 	// Comment out this line to run as root instead.
-	"remoteUser": "nic"
+	"remoteUser": "vscode"
 }

@@ -337,3 +337,4 @@ bazel-bin
 bazel-nick
 bazel-out
 bazel-testlogs
+bazel-vscode-cpp-container
