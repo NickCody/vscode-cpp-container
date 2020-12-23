@@ -24,16 +24,16 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && rm -rf /var/lib/apt/lists/*
 
 
-RUN cd /home/vscode \
+RUN cd /home/nic \
     && curl -L -O https://golang.org/dl/go1.15.5.linux-amd64.tar.gz \
     && tar -C /usr/local -xzf go1.15.5.linux-amd64.tar.gz \
     && rm go1.15.5.linux-amd64.tar.gz
 
 RUN groupadd docker \
-    && usermod -aG docker vscode
+    && usermod -aG docker nic
 
-USER vscode
+USER nic
 
-RUN cd /home/vscode \
-    && echo "export PATH=$PATH:/usr/local/go/bin:/home/vscode/go/bin" >> /home/vscode/.bashrc \
-    && /usr/local/go/bin/go get github.com/bazelbuild/buildtools/buildifier >> /home/vscode/results
+RUN cd /home/nic \
+    && echo "export PATH=$PATH:/usr/local/go/bin:/home/nic/go/bin" >> /home/nic/.bashrc \
+    && /usr/local/go/bin/go get github.com/bazelbuild/buildtools/buildifier >> /home/nic/results
