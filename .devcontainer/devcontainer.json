@@ -19,12 +19,13 @@
 	"extensions": [
 		"ms-azuretools.vscode-docker",
 		"bazelbuild.vscode-bazel",
-		"ms-vscode.cpptools"
+		"ms-vscode.cpptools",
+		"matepek.vscode-catch2-test-adapter"
 	],
 
 	"mounts": [
-		"source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
-		// "source=${env:HOME}${env:USERPROFILE},target=/workspace/user,type=bind,consistency=cached",
+		"source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind",
+		"source=/home/nic/.ssh,target=/home/vscode/.ssh,type=bind,consistency=delegated"
 	],
 	
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
